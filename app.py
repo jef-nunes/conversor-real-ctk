@@ -16,6 +16,13 @@ for x in path_imagens:
 # Carregar as imagens com PIL
 pil_imagem_1 = Image.open(path_imagens[0])
 
+# Converte o valor em real para dolar
+# e exibe uma mensagem com o resultado
+def converter_real():
+    real_input = float(valor_real_entry.get())
+    resultado = real_input * 0.17
+    messagebox.showinfo("Real em Dólar",f"R${round(, 2)} equivalem a US${round(formula, 2)}")
+
 # Criar e personalizar janela da aplicação
 ctk.set_appearance_mode("dark")
 janela = ctk.CTk()
