@@ -38,7 +38,7 @@ imagem_1_image = ctk.CTkImage(light_image=pil_imagem_1,dark_image=pil_imagem_1,s
 imagem_1_label = ctk.CTkLabel(master=janela,image=imagem_1_image,text="")
 valor_real_label = ctk.CTkLabel(master=janela,text="Valor em R$",font=("verdana",18,"bold"))
 valor_real_entry = ctk.CTkEntry(master=janela)
-converter_button = ctk.CTkButton(master=janela,text="Converter")
+converter_button = ctk.CTkButton(master=janela,text="Converter",command=converter_real)
 
 # Posicionar componentes
 titulo_label.pack(padx=10,pady=10)
